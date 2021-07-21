@@ -9,7 +9,7 @@ const forecast = (latitude, longitude, callback) => {
         else if (body.error) { callback("Kindly Input another location") }
         else {
 
-            callback(undefined, body.current.weather_descriptions + "it is " + body.current.temperature + " degree outside. But feels like " + body.current.feelslike + " degree.The wind speed is " + body.current.wind_speed + "Humidity is " + body.current.humidity + "%")
+            callback(undefined, body.current.weather_descriptions + "\n it is " + body.current.temperature + " degree outside. But feels like " + body.current.feelslike + " degree.The wind speed is " + body.current.wind_speed + " . Humidity is " + body.current.humidity + "%")
 
         }
     })
